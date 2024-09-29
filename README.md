@@ -17,7 +17,7 @@ Para construção dessa análise partimos da perspectiva de um hospital público
 com características semelhantes a COVID-19 o hospital possa estar preparado a nível operacional para enfrentar essa situação. Frente a situações ocorridas, como no caso de Manaus , entendemos que o preparo operacional é fundamental para que o hospital 
 consiga garantir uma capacidade de resposta eficiente e segura. A experiência adquirida durante a pandemia de COVID-19 destacou a importância de que medidas rápidas e integradas, tanto na gestão de recursos de saúde quanto no atendimento à população sejam pensadas de forma preventiva. 
 
-## Método
+## Método e Organização da Base
 
 Para construir uma visão abrangente e integrada do cenário da pandemia em seus aspectos sociais,sintomatológicos e financeiros fizemos o uso da base de dados PNAD COVID-2019 a base disponibiliza os dados de pesquisas realizadas no ano de 2020 entre os meses de Maio e Novembro. 
 Os meses selecionados para análise foram de Julho, Agosto e Setembro, a escolha desse período se deu por serem os meses mais iniciais da pandemia onde já haviam testes, assim foi possível filtrar os dados pelos seus resultados fazendo uma
@@ -57,3 +57,7 @@ análise mais assertiva sobre as características dos grupos. Também foram sele
     'B009E': 'exame_sangue_braco', #!
     'B009F': 'resultado_sangue_braco' #!
 ```
+### Utilização PySpark 
+
+A concatenação dos dados dos 3 meses selecionados resultou em mais de 1 milhão de registros, o que exigiu o uso do PySpark devido ao grande volume de dados. O PySpark é ideal para manipulação de grandes datasets, permitindo operações distribuídas e paralelizadas de forma eficiente. Ele foi escolhido para processar e analisar a base de dados sem comprometer a performance, garantindo que o processamento em larga escala fosse otimizado.
+Optamos pelo PySpark, considerando que os hospitais públicos frequentemente enfrentam restrições orçamentárias e já contam com infraestrutura on-premise. Nesse cenário, o PySpark se destaca não apenas pela eficiência no processamento, mas também por ser uma solução de código aberto, garantindo transparência em sua utilização. Além disso, sua adoção contribui para a redução de custos relacionados ao uso de serviços de nuvem de terceiros e assegura a confidencialidade dos dados dos pacientes, preservando a soberania nacional. Ao evitar o armazenamento dos dados de saúde em servidores de outros países, protegemos a privacidade e segurança da população.
