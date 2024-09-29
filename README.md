@@ -21,4 +21,39 @@ consiga garantir uma capacidade de resposta eficiente e segura. A experiência a
 
 Para construir uma visão abrangente e integrada do cenário da pandemia em seus aspectos sociais,sintomatológicos e financeiros fizemos o uso da base de dados PNAD COVID-2019 a base disponibiliza os dados de pesquisas realizadas no ano de 2020 entre os meses de Maio e Novembro. 
 Os meses selecionados para análise foram de Julho, Agosto e Setembro, a escolha desse período se deu por serem os meses mais iniciais da pandemia onde já haviam testes, assim foi possível filtrar os dados pelos seus resultados fazendo uma
-análise mais assertiva sobre as características dos grupos. Também foram selecionados 20 itens que fazem parte do questionário realizado na pesquisa que servem de forma concisa ao nosso objetivo.
+análise mais assertiva sobre as características dos grupos. Também foram selecionados um grupo de itens que fazem parte do questionário realizado na pesquisa que servem de forma concisa ao nosso objetivo, de forma que 20 questões tratam sobre as características clínicas dos sintomas, econômicas da população e de comportamentos e outras auxiliares sobre características de distribuição geográfica.
+
+### Colunas
+```
+    'v1013' : 'mes', #!
+    'UF' : 'estado', #!
+    'v1008': 'domicilio', #int de 1 a 14
+    'v1016': 'entrevista_domicilio', #int 1 a 99
+    'v1022': 'domicilio_urbano_rural',
+    'v1023': 'tipo_area', #!
+    'v1030': 'projecao_populacao',
+    'B0014': 'dificuldade_respiracao', #!
+    'B00111': 'perda_olfato_paladar', #!
+    'B0012': 'tosse', #!
+    'B002': 'estabelecimento_saude', ## Foi a algum estabelecimento? #!
+    'B0042': 'pronto_socorro_pub', ## pronto socorro que buscou atendimento? #!
+    'B0043': 'hospital_sus', ## local que buscou atendimento foi um hospital do sus? #!
+    'B0045': 'pronto_socorro_priv', ## pronto socorro privado ou das forças armadas? #!
+    'B0046': 'hospital_privado', # buscou hospital particular #!
+    'B005': 'internação', #!
+    'B008':'Teste_Covid', #!
+    'B011': 'restricao_contato', #!
+    'C001': 'trabalhou_min_1h',
+    'C002': 'afastamento_trabalho',
+    'C013': 'trabalho_remoto',
+    'C004': 'trabalho_remunerado', #!
+    'B007': 'plano_saude', #!
+    'A002': 'idade', #!
+    'F001': 'situacao_domicilio', #!
+    'B009A': 'exame_swab',#!
+    'B009B': 'resultado_swab',#!
+    'B009C': 'exame_sangue_dedo', #!
+    'B009D': 'resultado_sangue_dedo', #!
+    'B009E': 'exame_sangue_braco', #!
+    'B009F': 'resultado_sangue_braco' #!
+```
